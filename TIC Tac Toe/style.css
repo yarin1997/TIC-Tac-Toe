@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#game {
+    width: 100%;
+    background:linear-gradient(royalblue, rgb(111, 216, 174)); ;
+    font-family: merriweather;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    direction: rtl;
+    height: 700px;
+    gap: 50px;
+}
+#send{
+    cursor: pointer;
+    background-color: darkturquoise;
+}
+label {
+    font-size: large;
+    color: aliceblue;
+}
+
+h1 {
+    font-size: 4em;
+    font-style: italic;
+    font-weight: 700;
+    color: dimgrey;
+}
+
+input {
+    height: 40px;
+    width: 150px;
+    border: navajowhite;
+    border-radius: 5px;
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    margin: 5px;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    background-color: chartreuse;
+}
+
+input[type="submit"]:hover {
+    background-color: aquamarine;
+    width: 200px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border: 3px solid black;
+    display: none;
+}
+
+.cell {
+    width: 125px;
+    height: 125px;
+    border: 3px solid black;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+.cell:hover{
+    opacity: 0.5;
+    cursor: pointer;
+    background-color: white;
+}
+table{
+    border: none;
+}
+td{
+    background-color: #fff;
+    min-width: 50px;
+}
+#btn {
+    width: 100px;
+    border-radius: 2px;
+    height: 30px;
+    font-size: 20px;
+    color: blue;
+    background-color: beige;
+    cursor: pointer;
+    
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.9;
+}
+#details{
+    display: none;
+}
+.change{
+    animation: color 1.5s;
+}
+.ballon{
+    position: absolute;
+    width: 80vw;
+    height: 200px;
+    animation: imag 2s ease forwards;;
+}
+
+
+@keyframes color {
+    from{
+background-color: white;
+    }
+    to{
+        background-color: aqua;
+    }
+    
+}
+@keyframes imag{
+ from{
+    transform: translateY(100%);
+ }
+ to{
+    transform: translatey(-700px);
+ }
+}

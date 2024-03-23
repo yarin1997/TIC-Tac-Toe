@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <section id="game">
+                    <h1>איקס עיגול</h1>
+        <div id="first">
+            <h2>מטרת המשחק:</h2>
+            <p>מטרת כל שחקן היא ליצור שלושה סימנים (איקס או עיגול) הנמצאים על שורה אחת טור אחד או אלכסון אחד.
+                </p>
+                <h2>כללי המשחק:</h2>
+                <p> שני שחקנים, כל שחקן בוחר סימן, איקס או עיגול (בד"כ איקס מתחיל במשחק). השחקן הראשון מציב את הסימן שלו במקום כלשהו על
+                הלוח. לאחר מכן השחקן השני שם את סימנו וחוזר חלילה עד אשר אחד השחקנים יצר רצף של שלושה סימנים שלו בשורה אחת, טור אחד או
+                אלכסון אחד ובכך הוא ניצח או עד אשר כל הלוח מתמלא ואף אחד מהשחקנים לא הצליח ליצור רצף, במקרה כזה תוצאת המשחק היא תיקו.
+
+            </p>
+        </div>
+        <form id="form">
+            <label>הזינו שמות</label>
+            <br>
+            <label for="player-1st">שחקן 1:</label>
+            <input type="text" value="" placeholder="player1" id="input1">
+            <input type="text" value="" placeholder="player2" id="input2">
+            <label for="player-2st">שחקן 2:</label>
+            <br>
+            <input type="reset" value="send" id="send">
+        </form>
+        <table border="1" id="details">
+            <tr>
+                <td>Names</td>
+                <td>Player1</td>
+                <td>Player2</td>
+            </tr>
+                <tr>
+                    <td>Points</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+        </table>
+        <main id="board">
+            <div id="cell1" class="cell"></div>
+            <div id="cell2" class="cell"></div>
+            <div id="cell3" class="cell"></div>
+            <div id="cell4" class="cell"></div>
+            <div id="cell5" class="cell"></div>
+            <div id="cell6" class="cell"></div>
+            <div id="cell7" class="cell"></div>
+            <div id="cell8" class="cell"></div>
+            <div id="cell9" class="cell"></div>
+        </main>
+
+        <button id="btn" class="disabled">Click&play</button>
+    </section>
+</body>
+
+</html>
